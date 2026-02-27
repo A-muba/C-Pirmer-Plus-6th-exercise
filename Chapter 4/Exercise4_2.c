@@ -14,7 +14,8 @@ int main(){
     printf("Your name -->\t" "\"%*s %s\"\n", num_print2, first_name, last_name);
     num_print3 = 20-1-strlen(first_name);
     printf("Your name -->\t" "\"%-s %-*s\"\n",first_name, num_print3, last_name);
-    printf("Your name -->\t" "\"%*s %s\"\n", 3+strlen(first_name), first_name, last_name);
+    printf("Your name -->\t" "\"%*s %-*s\"\n", 3+strlen(first_name), first_name, 
+    3+strlen(last_name), last_name);
 
     return 0;
 }
